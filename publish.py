@@ -74,9 +74,9 @@ num_songs_in_weeks = [0 for i in range(20, 301, 20)]
 for w in from_0to100_list:
     num_songs_in_weeks[(w - 1) // 20] += 1
 
-x = np.array(['{:03d}-{:03d}'.format(i-9, i) for i in range(20, 301, 20)])
+x = np.array(['{:03d}-{:03d}'.format(i-19, i) for i in range(20, 301, 20)])
 y = np.array(num_songs_in_weeks)
 
-BarChart_h(x, y, 'Raw data', 'Num of songs', 'Weeks')
+BarChart_h(x, y, 'Weeks from published to Top100', 'Num of songs', 'Weeks')
 
         
