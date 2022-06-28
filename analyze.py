@@ -14,7 +14,7 @@ print('================[RawData]================')
 
 totalnum_weeks_in_top100, num_songs = 0, 0
 num_weeks = []
-max_weeks = 0
+max_weeks, max_0to100 = 0, 0
 
 with open('result_data.csv', newline='', encoding = 'utf8') as csvfile_r:
     dict_rows = csv.DictReader(csvfile_r)

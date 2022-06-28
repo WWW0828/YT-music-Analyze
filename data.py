@@ -60,9 +60,8 @@ for song_id, song_info in enumerate(Songs):
         print('Crawl[{:03d}]: {}({})'.format(song_id, date, song))
         continue
     else:
-        print('Crawl[{:03d}]: {}'.format(song_id, date), end='')
-
-        if (int(date[0])*1000 + int(date[1])*100 + int(date[2])*10 + int(date[3])) < 2016:
+        print('Crawl[{:03d}]: {}'.format(song_id, date), end='')        
+        if (int(str(date)[0:4] + str(date)[5:7] + str(date)[8:])) < 20160225:
             print('(remove)')
             continue
         print('\n', end='')
